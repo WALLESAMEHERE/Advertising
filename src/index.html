@@ -6,27 +6,45 @@
   <title>New site</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="stylesheets/screen.css">
+   <!-- bootstrap -->
+  <link rel="stylesheet" href="stylesheets/bootstrap.css">
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bitter|Yanone+Kaffeesatz" rel="stylesheet">
+  <!-- animations -->
+  <link rel="stylesheet" href="stylesheets/animate.min.css">
+  <!-- javasript -->
+  <script type="text/javascript" src="javascripts/app.js"></script>
 </head>
 <body>
   <div class="row">
   	<div class="col-xs-12">
-  		<div class="container">
+  		<div class="preloader" id="preload">
+  			<img src="images/ansta.png" alt="" class="image">
+  		</div>
+  		<div class="container" id="cont">
   			<div class="box">
-  				<p>Gdansk</p>
-  				<h1>Frot End Developer</h1>
-  				<ul>
-  					<li></li>
-  					<li></li>
-  					<li></li>
-  				</ul>
   				<div class="row">
-  					<div class="col-xs-12">
-  						<button>Napisz do nas</button>
+  					<div class="col-lg-12 info-location">
+  						<p id="location">Gdańsk</p>
   					</div>
   				</div>
-  				
-
-  				<a href="#">Asdasdas</a>
+  				<h1><span id="front">Front-End</span><br><p id="develop">Developer</p></h1>
+  				<div class="line" id="line">
+  					<span class="glyphicon glyphicon-question-sign"></span>
+  				</div>
+  				<div class="row">
+  					<div class="col-lg-4 req-box"><span class="glyphicon glyphicon-heart-empty"></span>Znasz HTML i CSS</div>
+  					<div class="col-lg-4 req-box"><span class="glyphicon glyphicon-wrench"></span>Lubisz tworzyc i ulepszać</div>
+  					<div class="col-lg-4 req-box"><span class="glyphicon glyphicon-eye-open"></span>Patrzysz na te grafikę i myslisz <b>"oni naprawdę potrzebuja front-enda"</b></div>
+  				</div>
+  				<div class="row">
+  					<div class="col-xs-12">
+  						<button id="write" class=""><a href="http://www.ansta.pl/kontakt/">Napisz do nas</a>
+							</button>
+  					</div>
+  				</div>
+  				<a href="http://ansta.pl/kariera/" id="home"><span class="glyphicon glyphicon-log-in info" aria-hidden="true" alt="Wiecej ifo"></span></a>
   			</div>
   		</div>
   	</div>

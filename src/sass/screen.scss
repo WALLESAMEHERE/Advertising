@@ -1,6 +1,97 @@
+@import 'bootstrap';
+@import 'animate';
+@import 'fonts';
+
+
+body{
+  background-color: #84CEB6;
+}
+.preloader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #84CEB6;
+    z-index: 999999; 
+  img{
+    position: absolute;
+    left: 43%;
+    top: 47%;
+    -webkit-animation: preloadAnim 2s infinite; /* Safari 4+ */
+     -moz-animation:    preloadAnim 2s infinite; /* Fx 5+ */
+     -o-animation:      preloadAnim 2s infinite; /* Opera 12+ */
+     animation:         preloadAnim 2s infinite; /* IE 10+, Fx 29+ */ 
+  }
+}
 .box{
-  border:2px solid black;
-  width:50%;
+  background-color: #F4F0EF;
+  width:55%;
   margin:0 auto;
   text-align:center;
+  transform:translateY(25px);
+  padding: 5px 20px;
+  border-radius:3%;
+  box-shadow: 10px 10px 25px grey;
+  .info-location{
+    p{
+      font-size: 2em;
+      font-weight: bold;
+      margin: 0 !important;
+    }
+  }
+  h1{
+    span{
+      font-size: 2.2em;
+      color: #3C4A45;
+    }
+  }
+  button{
+    margin: 20px 0;
+    background-color: #CE3362;
+    padding: 20px 50px;
+    color:white;
+    font-size: 1.1em;
+    outline: none;
+    border: none;
+    transition: .5s;
+    &:hover{
+      opacity: .8;
+    }
+  }
+}
+.line{
+  color:#CE3362;
+      position: relative;
+      width: 100%;
+      margin-bottom: 30px;
+    span{
+      padding: 0 5%;
+      position: relative;
+      font-size:4em;
+      z-index: 2;
+      background-color: #F4F0EF;
+    }
+      &:after{
+      content: '';
+      width: 100%;
+      border-bottom: solid 2px #CE3362;
+      position: absolute;
+      left: 0;
+      top: 29px;
+      z-index: -1;
+    }
+}
+.req-box{
+  span{
+    font-size: 2em;
+    width: 100%;
+  }
+}
+.info{
+  font-size: 2em;
+}
+
+.hajd{
+  opacity: 0;
 }
