@@ -2034,7 +2034,12 @@ body {
     border: none;
     transition: .5s; }
     .box button:hover {
-      opacity: .8; }
+      opacity: .5;
+      background-color: #DC6589; }
+    .box button a {
+      color: white; }
+      .box button a:hover {
+        text-decoration: none; }
 
 .line {
   color: #CE3362;

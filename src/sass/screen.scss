@@ -56,7 +56,14 @@ body{
     border: none;
     transition: .5s;
     &:hover{
-      opacity: .8;
+      opacity:.5;
+      background-color: #DC6589;
+    }
+    a{
+      color:white;
+      &:hover{
+        text-decoration: none;
+      }
     }
   }
 }

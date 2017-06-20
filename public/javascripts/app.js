@@ -23,6 +23,7 @@ window.onload = function()
 		line.classList.add('animated','bounceInUp');
 		(function(){
 			for (var i = 0;i < requir.length;i++){
+				
 				requir[i].classList.add('animated','flipInX');
 			}
 		})();
